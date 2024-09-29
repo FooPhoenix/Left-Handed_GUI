@@ -1,5 +1,34 @@
 ╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
 ║ Version         : 0.1.0                                                                                              ║
+║ Committed       : 2024.09.29   Branch : develop                                                                      ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+Creates the mod skeleton.
+
+───> Added      <───────────────────────────────────────────────────────────────────────────────────────────────────────
+
+    - A new logo for the mod.
+    - the mod.rules file with some images overrides.
+        - ./Data/gui/widgets.rules>/DefaultCursor overrided
+        - ./Data/gui/widgets.rules>/InvalidCursor overrided
+        - ./Data/gui/widgets.rules>/RightClickCursor overrided
+
+───> Changed    <───────────────────────────────────────────────────────────────────────────────────────────────────────
+
+    - Modifed 6 images so they are left-handed now :
+        - gui/cursor_arrow.png
+        - gui/cursor_invalid.png
+        - gui/cursor_right_click.png
+
+───> Removed    <───────────────────────────────────────────────────────────────────────────────────────────────────────
+        
+    - Removed 1 images that is not usefull for left-handed mode.
+        - gui/cancel.png
+        
+        
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Version         : 0.1.0                                                                                              ║
 ║ Committed       : 2024.09.28   Branch : develop                                                                      ║
 ╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 

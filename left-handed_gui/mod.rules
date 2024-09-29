@@ -1,0 +1,68 @@
+//
+// Author : FooPhoenix
+//
+// Licence : MIT License
+// Repository : https://github.com/FooPhoenix/Left-Handed_GUI
+//
+// Other Contributors :
+//
+//
+// =============================================================================
+
+ID      = FooPhoenix.Left-Handed_GUI
+Author  = "FooPhoenix"
+Version = 0.1.0
+
+Name        = "Left-Handed GUI"
+Description = "This mod mirrors the mouse cursor orientation and some interface icons to better suit left-handed users.\n\nUpdated for the game version '0.27.xx'."
+Logo        = "logo.png"
+
+CompatibleGameVersions = ["0.20.0", "0.21.0", "0.22.0", "0.23.0", "0.24.0", "0.25.0", "0.26.0", "0.27.0"]
+
+ModifiesMultiplayer = false
+
+
+// StringsFolder = "strings"
+
+Actions
+[
+	{
+		Action     = Overrides
+		OverrideIn = "<./Data/gui/widgets.rules>/DefaultCursor"
+
+		CreateIfNotExisting = false
+		IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/cursor_arrow.png"
+            HotSpot = [71, 9]
+        }
+	}
+	{
+		Action     = Overrides
+		OverrideIn = "<./Data/gui/widgets.rules>/InvalidCursor"
+
+		CreateIfNotExisting = false
+		IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/cursor_invalid.png"
+            HotSpot = [71, 9]
+        }
+	}
+	{
+		Action     = Overrides
+		OverrideIn = "<./Data/gui/widgets.rules>/RightClickCursor"
+
+		CreateIfNotExisting = false
+		IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/cursor_right_click.png"
+            HotSpot = [71, 9]
+        }
+	}
+]
