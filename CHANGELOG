@@ -1,5 +1,95 @@
 ╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
 ║ Version         : 0.1.0                                                                                              ║
+║ Committed       : 2024.09.30   Branch : develop                                                                      ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+Adds more switched images.
+
+───> Changed    <───────────────────────────────────────────────────────────────────────────────────────────────────────
+
+    - Added 40 images overrides to the mod.rules file :
+        - <./Data/gui/game/game_gui.rules>/MoveCursor overrided
+        - <./Data/gui/game/game_gui.rules>/AttackCursor overrided
+        - <./Data/gui/game/game_gui.rules>/TargetCursor overrided
+        - <./Data/gui/game/game_gui.rules>/FtlJumpCursor overrided
+        - <./Data/gui/game/sim_gui.rules>/FocusModeCursor overrided
+        - <./Data/gui/game/sim_gui.rules>/PartModeCursor overrided
+        - <./Data/gui/game/sim_gui.rules>/NuggetCollectCursor overrided
+        - <./Data/gui/game/sim_gui.rules>/NuggetCantCollectCursor overrided
+        - <./Data/gui/game/sim_gui.rules>/SalvageCursor overrided
+        - <./Data/gui/game/comms/comms_gui.rules>/CursorValid overrided
+        - <./Data/gui/game/comms/comms_gui.rules>/CursorInvalid overrided
+        - <./Data/gui/game/crew/crew_gui.rules>/AssignToSquadCursor overrided
+        - <./Data/gui/game/crew/crew_gui.rules>/SetCrewRoleCursor overrided
+        - <./Data/gui/game/designer/build_gui.rules>/GrabPartCursor overrided
+        - <./Data/gui/game/designer/build_gui.rules>/RemovePartCursor overrided
+        - <./Data/gui/game/designer/build_gui.rules>/RepairCursor overrided
+        - <./Data/gui/game/designer/build_gui.rules>/RepairCursor overrided
+        - <./Data/gui/game/designer/paint_gui.rules>/GrabDecalCursor overrided
+        - <./Data/gui/game/designer/paint_gui.rules>/RemoveDecalCursor overrided
+        - <./Data/gui/game/parts/part_targeters.rules>/PartTargeters/0/Cursor overrided
+        - <./Data/gui/game/parts/part_targeters.rules>/PartTargeters/1/TargetObjectCursor overrided
+        - <./Data/gui/game/parts/part_targeters.rules>/PartTargeters/2/TargetObjectCursor overrided
+        - <./Data/gui/game/parts/part_targeters.rules>/PartTargeters/3/TargetObjectCursor overrided
+        - <./Data/gui/game/resources/resources_gui.rules>/SetResourceTypeCursor overrided
+        - <./Data/gui/game/resources/resources_gui.rules>/ClearResourceTypeCursor overrided
+        - <./Data/gui/game/resources/resources_gui.rules>/MoveResourcesPutDownCursor overrided
+        - <./Data/gui/game/resources/resources_gui.rules>/SupplyChainToolSelectionCursor overrided
+        - <./Data/modes/creative/creative.rules>/Gui/OtherPlayerCursorSprite/Texture overrided
+        - <./Data/modes/creative/creative.rules>/Gui overrided
+        - <./Data/gui/game/crew/crew_gui.rules>/SelectCrewIcon/Texture overrided
+        - <./Data/gui/game/designer/build_gui.rules>/RemovePartSprite/Texture overrided
+        - <./Data/gui/game/designer/build_gui.rules>/GrabPartSprite/Texture overrided
+        - <./Data/gui/game/designer/build_gui.rules>/SelectPartsSprite/Texture overrided
+        - <./Data/gui/game/designer/paint_gui.rules>/RemoveDecalSprite/Texture overrided
+        - <./Data/gui/game/designer/paint_gui.rules>/GrabDecalSprite/Texture overrided
+        - <./Data/gui/game/designer/paint_gui.rules>/SelectDecalsSprite/Texture overrided
+        - <./Data/gui/game/resources/resources_gui.rules>/GrabToolIcon/Texture overrided
+        - <./Data/gui/game/resources/resources_gui.rules>/ClearToolIcon/Texture overrided
+        - <./Data/codex/tips/tips.rules>/CodexPages/1/Entries/0/Image/Texture overrided
+        - <./Data/codex/tips/tips.rules>/CodexPages/33/Entries/0/Image/Texture overrided
+
+    - Modifed 3 images so they are left-handed now :
+        - gui/game/comms/cursor_comms_valid.png
+        - gui/game/comms/cursor_comms_invalid.png
+        - gui/game/crew/cursor_assign_squad.png
+        - gui/game/designer/cursor_delete.png
+        - gui/game/designer/cursor_repair.png
+        - gui/game/designer/tool_delete.png
+        - gui/game/parts/cursor_link_target.png
+        - gui/game/parts/cursor_tractor_beam.png
+        - gui/game/resources/cursor_clear.png
+        - gui/game/resources/cursor_drop.png
+        - gui/game/resources/cursor_supplier_target.png
+        - gui/game/resources/tool_clear.png
+        - gui/game/cursor_attack.png
+        - gui/game/cursor_collect_resource.png
+        - gui/game/cursor_cant_collect_resource.png
+        - gui/game/cursor_focus.png
+        - gui/game/cursor_ftl.png
+        - gui/game/cursor_grab.png
+        - gui/game/cursor_magic.png
+        - gui/game/cursor_move.png
+        - gui/game/cursor_salvage.png
+        - gui/game/cursor_select.png
+        - gui/game/cursor_target.png
+        - gui/game/tool_grab.png
+        - gui/game/tool_select.png
+        
+───> Added      <───────────────────────────────────────────────────────────────────────────────────────────────────────
+        
+    - added 1 images ans switched it for left-handed mode :
+        - modes/creative/cursor_multiplayer.png
+        
+───> Removed    <───────────────────────────────────────────────────────────────────────────────────────────────────────
+        
+    - Removed 1 images that is not usefull for left-handed mode.
+        - gui/game/designer/tool_repair.png
+
+
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Version         : 0.1.0                                                                                              ║
 ║ Committed       : 2024.09.29   Branch : develop                                                                      ║
 ╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 
@@ -8,14 +98,14 @@ Creates the mod skeleton.
 ───> Added      <───────────────────────────────────────────────────────────────────────────────────────────────────────
 
     - A new logo for the mod.
-    - the mod.rules file with some images overrides.
-        - ./Data/gui/widgets.rules>/DefaultCursor overrided
-        - ./Data/gui/widgets.rules>/InvalidCursor overrided
-        - ./Data/gui/widgets.rules>/RightClickCursor overrided
+    - the mod.rules file with some images overrides :
+        - <./Data/gui/widgets.rules>/DefaultCursor overrided
+        - <./Data/gui/widgets.rules>/InvalidCursor overrided
+        - <./Data/gui/widgets.rules>/RightClickCursor overrided
 
 ───> Changed    <───────────────────────────────────────────────────────────────────────────────────────────────────────
 
-    - Modifed 6 images so they are left-handed now :
+    - Modifed 3 images so they are left-handed now :
         - gui/cursor_arrow.png
         - gui/cursor_invalid.png
         - gui/cursor_right_click.png
