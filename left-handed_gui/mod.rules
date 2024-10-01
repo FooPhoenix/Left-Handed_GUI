@@ -1,0 +1,770 @@
+//
+// Author : FooPhoenix
+//
+// Licence : MIT License
+// Repository : https://github.com/FooPhoenix/Left-Handed_GUI
+//
+// Other Contributors :
+//
+//
+// =============================================================================
+
+ID      = FooPhoenix.Left-Handed_GUI
+Author  = "FooPhoenix"
+Version = 1.0.0
+
+
+Name        = "Left-Handed GUI"
+Description = "This mod mirrors the mouse cursor orientation and some interface icons to better suit left-handed players.\n\nUpdated for the game version '0.27.xx'."
+Logo        = "logo.png"
+
+
+CompatibleGameVersions = ["0.20.0", "0.21.0", "0.22.0", "0.23.0", "0.24.0", "0.25.0", "0.26.0", "0.27.0"]
+ModifiesMultiplayer    = false
+
+
+// StringsFolder = "strings"
+
+Actions
+[
+    // Action : 1
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/widgets.rules>/DefaultCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/cursor_arrow.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 2
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/widgets.rules>/InvalidCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/cursor_invalid.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 3
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/widgets.rules>/RightClickCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/cursor_right_click.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 4
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/game_gui.rules>/MoveCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/cursor_move.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 5
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/game_gui.rules>/AttackCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/cursor_attack.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 6
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/game_gui.rules>/TargetCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/cursor_target.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 7
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/game_gui.rules>/FtlJumpCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/cursor_ftl.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 8
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/sim_gui.rules>/FocusModeCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/cursor_focus.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 9
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/sim_gui.rules>/PartModeCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/cursor_select.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 10
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/sim_gui.rules>/NuggetCollectCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/cursor_collect_resource.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 11
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/sim_gui.rules>/NuggetCantCollectCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/cursor_cant_collect_resource.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 12
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/sim_gui.rules>/SalvageCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/cursor_salvage.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 13
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/comms/comms_gui.rules>/CursorValid"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/comms/cursor_comms_valid.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 14
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/comms/comms_gui.rules>/CursorInvalid"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/comms/cursor_comms_invalid.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 15
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/crew/crew_gui.rules>/AssignToSquadCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/crew/cursor_assign_squad.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 16
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/crew/crew_gui.rules>/SetCrewRoleCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/cursor_magic.png"
+            HotSpot = [57, 22]
+        }
+    }
+    // Action : 17
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/build_gui.rules>/GrabPartCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/cursor_grab.png"
+            HotSpot = [40, 40]
+        }
+    }
+    // Action : 18
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/build_gui.rules>/RemovePartCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/designer/cursor_delete.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 19
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/build_gui.rules>/RepairCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/designer/cursor_repair.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 20
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/build_gui.rules>/RepairCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/designer/cursor_repair.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 21
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/paint_gui.rules>/GrabDecalCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/cursor_grab.png"
+            HotSpot = [40, 40]
+        }
+    }
+    // Action : 22
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/paint_gui.rules>/RemoveDecalCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/designer/cursor_delete.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 23
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/parts/part_targeters.rules>/PartTargeters/0/Cursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/parts/cursor_tractor_beam.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 24
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/parts/part_targeters.rules>/PartTargeters/1/TargetObjectCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/parts/cursor_link_target.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 25
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/parts/part_targeters.rules>/PartTargeters/2/TargetObjectCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/parts/cursor_link_target.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 26
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/parts/part_targeters.rules>/PartTargeters/3/TargetObjectCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/parts/cursor_link_target.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 27
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/resources/resources_gui.rules>/SetResourceTypeCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/cursor_magic.png"
+            HotSpot = [57, 22]
+        }
+    }
+    // Action : 28
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/resources/resources_gui.rules>/ClearResourceTypeCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/resources/cursor_clear.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 29
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/resources/resources_gui.rules>/MoveResourcesPutDownCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/resources/cursor_drop.png"
+            HotSpot = [40, 40]
+        }
+    }
+    // Action : 30
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/resources/resources_gui.rules>/SupplyChainToolSelectionCursor"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/resources/cursor_supplier_target.png"
+            HotSpot = [71, 9]
+        }
+    }
+    // Action : 31
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/modes/creative/creative.rules>/Gui/OtherPlayerCursorSprite/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File = "modes/creative/cursor_multiplayer.png"
+        }
+    }
+    // Action : 32
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/modes/creative/creative.rules>/Gui"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            OtherPlayerCursorOffset = [-27, -4]
+        }
+    }
+
+
+
+    // Action : 33
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/crew/crew_gui.rules>/SelectCrewIcon/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/tool_select.png"
+        }
+    }
+    // Action : 34
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/build_gui.rules>/RemovePartSprite/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/designer/tool_delete.png"
+        }
+    }
+    // Action : 35
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/build_gui.rules>/GrabPartSprite/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/tool_grab.png"
+        }
+    }
+    // Action : 36
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/build_gui.rules>/SelectPartsSprite/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/tool_select.png"
+        }
+    }
+    // Action : 37
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/paint_gui.rules>/RemoveDecalSprite/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/designer/tool_delete.png"
+        }
+    }
+    // Action : 38
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/paint_gui.rules>/GrabDecalSprite/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/tool_grab.png"
+        }
+    }
+    // Action : 39
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/paint_gui.rules>/SelectDecalsSprite/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/tool_select.png"
+        }
+    }
+    // Action : 40
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/resources/resources_gui.rules>/GrabToolIcon/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/tool_grab.png"
+        }
+    }
+    // Action : 41
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/resources/resources_gui.rules>/ClearToolIcon/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/resources/tool_clear.png"
+        }
+    }
+
+
+
+    // Action : 42
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/codex/tips/tips.rules>/CodexPages/1/Entries/0/Image/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/cursor_right_click.png"
+        }
+    }
+    // Action : 43
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/codex/tips/tips.rules>/CodexPages/33/Entries/0/Image/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/cursor_focus.png"
+        }
+    }
+
+    // Action : 44
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/brushes.rules>/Brushes/0/0/Icon/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/designer/brush_1x1.png"
+        }
+    }
+    // Action : 45
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/brushes.rules>/Brushes/0/1/Icon/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/designer/brush_2x2.png"
+        }
+    }
+    // Action : 46
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/brushes.rules>/Brushes/0/2/Icon/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/designer/brush_3x3.png"
+        }
+    }
+    // Action : 47
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/brushes.rules>/Brushes/0/3/Icon/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/designer/brush_4x4.png"
+        }
+    }
+    // Action : 48
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/brushes.rules>/Brushes/0/4/Icon/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/designer/brush_5x5.png"
+        }
+    }
+    // Action : 49
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/brushes.rules>/Brushes/0/5/Icon/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/designer/brush_6x6.png"
+        }
+    }
+    // Action : 50
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/brushes.rules>/Brushes/0/6/Icon/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/designer/brush_7x7.png"
+        }
+    }
+    // Action : 51
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/brushes.rules>/Brushes/0/7/Icon/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/designer/brush_8x8.png"
+        }
+    }
+    // Action : 52
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/brushes.rules>/Brushes/0/8/Icon/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/designer/brush_9x9.png"
+        }
+    }
+    // Action : 53
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/brushes.rules>/Brushes/0/9/Icon/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/designer/brush_10x10.png"
+        }
+    }
+    // Action : 54
+    {
+        Action     = Overrides
+        OverrideIn = "<./Data/gui/game/designer/brushes.rules>/Brushes/1/4/Icon/Texture"
+
+        CreateIfNotExisting = false
+        IgnoreIfNotExisting = false
+
+        Overrides
+        {
+            File    = "gui/game/designer/brush_fill.png"
+        }
+    }
+ 
+]
