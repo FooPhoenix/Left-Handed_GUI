@@ -11,11 +11,11 @@
 
 ID      = FooPhoenix.Left-Handed_GUI
 Author  = "FooPhoenix"
-Version = 0.1.0
+Version = 1.0.0
 
 
 Name        = "Left-Handed GUI"
-Description = "This mod mirrors the mouse cursor orientation and some interface icons to better suit left-handed users.\n\nUpdated for the game version '0.27.xx'."
+Description = "This mod mirrors the mouse cursor orientation and some interface icons to better suit left-handed players.\n\nUpdated for the game version '0.27.xx'."
 Logo        = "logo.png"
 
 
